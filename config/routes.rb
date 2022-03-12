@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'homes#index'
 
 
-  resources :tweets, only: [:index, :create, :show, :destroy]
+  resources :tweets, only: [:index, :new, :create, :show, :destroy]
 #do
 #   resources :comments, only: [:create, :destroy]
 # end
