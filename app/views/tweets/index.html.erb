@@ -4,7 +4,9 @@
     <%= link_to tweet_path(tweet.id) do %>
   <div class='tweet-img-content'>
     <%= tweet.text %>
+    <% if tweet.image.present? %>
     <%= image_tag tweet.image.variant(resize:'300x200'), class: "tweet-img" %>
+    <% end %>
     <%= tweet.user.name %>
     <% end %>
     <%end%>
