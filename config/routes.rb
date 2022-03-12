@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
+
   devise_for :users
   root to: 'homes#index'
-end
 
-# devise_scope :user do
-#   get '/users/sign_out' => 'devise/sessions#destroy'
-# end
+
+  resources :tweets, only: [:index, :new, :create, :show, :destroy] do
+    resources :comments, only: [:create, :destroy]
+  end
+
+resources :body_makes
+
+end
