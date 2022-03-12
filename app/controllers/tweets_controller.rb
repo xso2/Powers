@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show ] 
-  # before_action :set_tweet, only: [:create, :edit]
+  before_action :set_tweet, only: [:create, :edit]
   before_action :move_to_index, except: [:index, :show]
 
 
@@ -38,9 +38,9 @@ class TweetsController < ApplicationController
     params.require(:tweet).permit(:text, :image).merge(user_id: current_user.id )
   end
 
-  # def set_tweet
-  #   @tweet = Tweet.find(tweet_params)
-  # end
+  def set_tweet
+    @tweet = Tweet.find(tweet_params)
+  end
 
   def move_to_index
     unless user_signed_in?

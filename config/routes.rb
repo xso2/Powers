@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   devise_for :users
   root to: 'homes#index'
 
@@ -7,4 +8,7 @@ Rails.application.routes.draw do
 #do
 #   resources :comments, only: [:create, :destroy]
 # end
+
+resources :body_makes
+
 end

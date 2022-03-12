@@ -25,10 +25,10 @@ form {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #00b5ad;
+  color: #2a2b2f;
   text-decoration: none;
   user-select: none;
-  background: #fff;
+  background: #bfbfbe;
   transition: 0.5s;
   border-radius: 20px;
   border: rgb(62, 68, 70);
@@ -36,7 +36,7 @@ form {
 
 .button-gradation:hover {
   color: rgb(55, 52, 52);
-  background: -webkit-linear-gradient(top left, #03bee8, #0ce6d7);
+  background: -webkit-linear-gradient(top left, #f5c500, #bd9700);
   
 }
 
