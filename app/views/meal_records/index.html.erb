@@ -1,0 +1,18 @@
+<div class="contents">
+  <%= render partial: "form", locals: { meal_record: @meal_record }, class:"meal_record-form" %> 
+  <ul class="meal_record">
+    <% @meal_records.each do |meal_record| %>
+    <li>
+      <%= link_to meal_record_path(meal_record.id) do %>
+        <div class='meal_record-img-content'>
+          <% if meal_record.image.present? %>
+          <%= image_tag meal_record.image.variant(resize:'300x200'), class: "meal_record-img" %>
+          <% end %>
+        </div>
+        <h2><%= meal_record.user.name %></h2>
+        <p><%= meal_record.text %></p>
+      <% end %><!-- link_to meal_record_path -->
+    </li>
+    <% end %>
+  </ul>
+</div>

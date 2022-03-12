@@ -5,8 +5,9 @@ class User < ApplicationRecord
           :recoverable, :rememberable, :validatable
 
   has_many :tweets
-  # has_many :comments
-  # has_many :meal_records
+  has_many :comments
+  has_many :meal_records
+  has_many :body_makes
 
   validates :name, presence: true
   validates :age , presence: true
