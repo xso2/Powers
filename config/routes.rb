@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :lists
   get 'lists/index'
   devise_for :users
   root to: 'homes#index'
@@ -10,5 +11,5 @@ Rails.application.routes.draw do
 
 resources :body_makes
 resources :meal_records
-
+resources :lists
 end
