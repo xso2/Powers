@@ -1,5 +1,5 @@
-<form>
 <%= form_with model: @body_make, local: true do |f|%>
+<%= render "shared/error_messages", model: f.object %>
 
   <div class="field">
     <%= f.label :weight, "体重" %><br />
@@ -20,4 +20,3 @@
     <%= f.submit "保存する", class: "button-gradation"  %>
   </div>
 <% end %>
-</form>

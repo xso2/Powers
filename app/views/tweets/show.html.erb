@@ -11,10 +11,11 @@
           <%= link_to "削除する", tweet_path(@tweet.id), method: :delete, class: :tweet__btn %>
         </div>
       <% end %>
-
-      <div class="tweet__image">
-        <%= image_tag @tweet.image %>
-      </div>
+      <% if @tweet.image.present? %>
+        <div class="tweet__image">
+          <%= image_tag @tweet.image %>
+        </div>
+        <% end %>
       <div class="tweet__body">
         <div class="tweet__detail">
             <%= @tweet.text %>

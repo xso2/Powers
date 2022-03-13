@@ -6,6 +6,7 @@ class MealRecordsController < ApplicationController
 
   def index
     @meal_records = MealRecord.includes(:user).order("created_at DESC")
+    @meal_record = MealRecord.new
   end
 
   def new

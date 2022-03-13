@@ -1,5 +1,6 @@
-<form>
 <%= form_with model: @meal_record, local: true do |f|%>
+<%= render "shared/error_messages", model: f.object %>
+
   <div class="field">
     <%= f.label :text, "食事記録" %><br />
     <%= f.text_area :text, class:"form-text" %>
@@ -19,4 +20,3 @@
     <%= f.submit "保存する", class: "button-gradation"  %>
   </div>
 <% end %>
-</form>
