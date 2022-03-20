@@ -7,6 +7,11 @@
   </div>
 
     <div class="field">
+    <%= f.collection_select(:meal_time_id, MealTime.all, :id, :name, {}, {class:"meal-time-select"}) %>
+  </div>
+
+
+    <div class="field">
     <%= f.label :calorie, "カロリー" %><br />
     <%= f.text_field :calorie, class:"form-text" %>
   </div>
