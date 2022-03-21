@@ -1,3 +1,11 @@
-<%= month_calendar do |date| %>
+<%= month_calendar(events: @body_makes) do |date, body_makes| %>
   <%= date %>
+
+  <% body_makes.each do |body_make| %>
+    <div class="weight">
+      <%= link_to body_make_path(body_make.id) do %>
+        <%= body_make.weight %>kg
+      <% end %>
+    </div>
+  <% end %>
 <% end %>

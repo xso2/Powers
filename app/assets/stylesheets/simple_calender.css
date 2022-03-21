@@ -24,3 +24,21 @@
 .simple-calendar .today {
   background: #f5c500;
 }
+
+.weight {
+  text-align: center;
+  font-size: x-large;
+  margin-top: 15px;
+}
+
+.weight a:hover {
+  color: #2a2b2f;
+  font-weight: bold;
+  background-color:rgba(0,0,0,0);
+
+}
+
+.weight a {
+  text-decoration: none;
+  color: #2a2b2f;
+}

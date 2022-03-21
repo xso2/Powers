@@ -35,7 +35,7 @@ class BodyMakesController < ApplicationController
   private
 
   def body_make_params
-    params.require(:body_make).permit(:text, :weight, :image).merge(user_id: current_user.id )
+    params.require(:body_make).permit(:text, :weight, :image, :start_time).merge(user_id: current_user.id )
   end
 
   def set_body_make

@@ -1,19 +1,21 @@
 <div class="contents">
-  <%= render partial: "form", locals: { tweet: @tweet }, class:"tweet-form" %> 
-  <ul class="post">
-    <% @tweets.each do |tweet| %>
-    <li>
-      <%= link_to tweet_path(tweet.id) do %>
-        <div class='tweet-img-content'>
-          <% if tweet.image.present? %>
-          <%= image_tag tweet.image.variant(resize:'300x200'), class: "tweet-img" %>
-          <% end %>
-        </div>
-        <h2><%= tweet.user.name %></h2>
-        <p><%= tweet.text %></p>
-      <% end %><!-- link_to tweet_path -->
-    </li>
-    <% end %>
-  </ul>
+  <div class="col-2">
+    <%= render partial: "form", locals: { tweet: @tweet }, class:"tweet-form" %> 
+    <ul class="post card-list">
+      <% @tweets.each do |tweet| %>
+      <li>
+        <%= link_to tweet_path(tweet.id) do %>
+          <div class='tweet-img-content'>
+            <% if tweet.image.present? %>
+            <%= image_tag tweet.image.variant(resize:'300x200'), class: "tweet-img" %>
+            <% end %>
+          </div>
+          <h2><%= tweet.user.name %></h2>
+          <p><%= tweet.text %></p>
+        <% end %><!-- link_to tweet_path -->
+      </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
 

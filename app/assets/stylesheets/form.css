@@ -1,12 +1,19 @@
 form {
   display: inline-block;
   border-radius: 10px;
-  top: 100px;
+  /* top: 100px;
   left: 20px;
-  position: fixed;
+  position: fixed; */
+  margin-top: px;
+  padding: 30px 16px;
   width: 400px;
   box-shadow: 10px 10px 10px #2a2b2f;
   background-color: #fff;
+  text-align: center;
+}
+
+form > * + * {
+  margin-top: 20px;
 }
 
 
@@ -17,7 +24,15 @@ form {
   max-height: 500px;
 }
 
+.field a {
+  text-decoration: none;
+}
 
+.field a:hover {
+  font-weight: bold;
+  color: #2a2b2f;
+  background-color: #fff;
+}
 
 /* ボタン関連 */
 .button-gradation {

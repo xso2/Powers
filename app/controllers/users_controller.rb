@@ -16,6 +16,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @body_makes = current_user.body_makes
+    #@body_makes = BodyMakes.where(user_id: [User.follows.ids])
   end
 
   def edit

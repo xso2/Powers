@@ -21,3 +21,17 @@
   @import "header.css";
   @import "form.css";
   @import "post.css";
+
+
+.contents { padding-top: 60px; }
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.col-2 {
+  display: flex;
+  align-items: flex-start
+}

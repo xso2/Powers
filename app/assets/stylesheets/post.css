@@ -14,3 +14,9 @@
   box-shadow: 10px 10px 10px #2a2b2f;
   background-color: #fff;
 }
+
+.post li a {
+  text-align: center;
+  color: #2b2f2a;
+  text-decoration: none;
+}
