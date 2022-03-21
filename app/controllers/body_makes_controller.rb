@@ -16,7 +16,7 @@ class BodyMakesController < ApplicationController
   def create
     @body_make = BodyMake.new(body_make_params)
     if @body_make.save
-      redirect_to root_path
+      redirect_to body_makes_path
     else
       render :new
     end
