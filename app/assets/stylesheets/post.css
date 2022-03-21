@@ -1,0 +1,16 @@
+.post ul {
+  display: flex;
+}
+
+.post li {
+  display: block;
+  flex-direction: column;
+  border-radius: 10px;
+  top: 100px;
+  left: 400px;
+  width: 400px;
+  max-height: 400px;
+  height: 400px;
+  box-shadow: 10px 10px 10px #2a2b2f;
+  background-color: #fff;
+}

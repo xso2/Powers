@@ -1,0 +1,26 @@
+.simple-calendar{
+  margin-top: 100px;
+}
+
+.simple-calendar table {
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  background-color: #fff;
+  border: 10px solid #2a2b2f;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+
+.simple-calendar .prev-month {
+  background: #bfbfbe;
+}
+
+.simple-calendar .next-month {
+  background: #bfbfbe;
+}
+
+.simple-calendar .today {
+  background: #f5c500;
+}

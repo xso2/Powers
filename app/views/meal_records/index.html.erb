@@ -1,6 +1,6 @@
 <div class="contents">
   <%= render partial: "form", locals: { meal_record: @meal_record }, class:"meal_record-form" %> 
-  <ul class="meal_record">
+  <ul class="post">
     <% @meal_records.each do |meal_record| %>
     <li>
       <%= link_to meal_record_path(meal_record.id) do %>
