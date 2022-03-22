@@ -1,21 +1,22 @@
 <div class="contents">
   <div class="col-2">
-    <%= render partial: "form", locals: { body_make: @body_make }, class:"body_make-form" %> 
+    <%= render partial: "form", locals: { body_make: @body_make }, class:"bodymake-form" %> 
     <ul class="post card-list">
-      <% 5.times do |i| %>
+      <%# 5.times do |i| %>
       <% @body_makes.each do |body_make| %>
       <li>
         <%= link_to body_make_path(body_make.id) do %>
           <div class='body_make-img-content'>
-            <% if body_make.image.present? %>
-            <%= image_tag body_make.image.variant(resize:'300x200'), class: "body_make-img" %>
-            <% end %>
           </div>
-          <h2><%= body_make.user.name %></h2>
+          <h2><%#= body_make.user.name %></h2>
+          <h3><%= body_make.weight %>kg</h3>
           <p><%= body_make.text %></p>
+            <% if body_make.image.present? %>
+            <%= image_tag body_make.image, class: "body-make-img" %>
+            <% end %>
         <% end %><!-- link_to body_make_path -->
       </li>
-      <% end %>
+      <%# end %>
       <% end %>
     </ul>
   </div>

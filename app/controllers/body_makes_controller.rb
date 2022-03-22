@@ -39,7 +39,7 @@ class BodyMakesController < ApplicationController
   end
 
   def set_body_make
-    @body_makes = BodyMake.find(body_make_params)
+    @body_makes = BodyMake.find(params[:id])
   end
 
   def move_to_index
