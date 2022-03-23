@@ -21,6 +21,18 @@
 .logo a {
   text-decoration: none;
   color: #2a2b2f;
+  justify-content: space-between;
+}
+
+
+
+.logo a:hover {
+  text-decoration: none;
+  color: #2a2b2f;
+}
+
+.logo-img:hover {
+  color: #2a2b2f;
 }
 
 .title.is-4 {
