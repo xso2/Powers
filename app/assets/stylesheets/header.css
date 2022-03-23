@@ -15,7 +15,31 @@
   padding: 0 0.8em;
   margin: 0 auto;
   font-size: 1.2em;
+<<<<<<< Updated upstream
   justify-content: space-around;
+=======
+  justify-content: space-between;
+}
+
+.logo {
+  
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: #2a2b2f;
+}
+
+.logo-img:hover {
+  color: #2a2b2f;
+}
+
+.title.is-4 {
+  font-family: cursive;
+  font-size: 35px;
+  ;
+}
+>>>>>>> Stashed changes
 
 }
 
