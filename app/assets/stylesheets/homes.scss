@@ -1,3 +1,17 @@
 body {
   background-color: #bfbfbe;
 }
+
+.form-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.form-top li {
+  list-style: none;
+}

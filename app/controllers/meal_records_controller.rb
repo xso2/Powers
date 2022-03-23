@@ -38,7 +38,7 @@ class MealRecordsController < ApplicationController
   end
 
   def set_meal_record
-    @meal_records = MealRecord.find(meal_record_params)
+    @meal_records = MealRecord.find(params[:id])
   end
 
   def move_to_index

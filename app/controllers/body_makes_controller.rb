@@ -15,6 +15,7 @@ class BodyMakesController < ApplicationController
 
   def create
     @body_make = BodyMake.new(body_make_params)
+    @body_make.start_time = Date.current
     if @body_make.save
       redirect_to body_makes_path
     else
@@ -39,7 +40,7 @@ class BodyMakesController < ApplicationController
   end
 
   def set_body_make
-    @body_makes = BodyMake.find(body_make_params)
+    @body_makes = BodyMake.find(params[:id])
   end
 
   def move_to_index

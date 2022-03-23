@@ -1,0 +1,20 @@
+.tweet-img {
+  width: 400px;
+  border-radius: 8px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.tweet__wrapper {
+  display: block;
+  flex-direction: column;
+  border-radius: 10px;
+  top: 100px;
+  left: 400px;
+  width: 400px;
+  max-height: 400px;
+  height: 400px;
+  box-shadow: 10px 10px 10px #2a2b2f;
+  background-color: #fff;
+  text-align: center;
+}

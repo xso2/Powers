@@ -26,6 +26,11 @@ class UsersController < ApplicationController
   def update
   end
 
+  def search
+    @search_friends = User.others(current_user).search(params[:keyword])
+  end
+
+
   private 
 
   def user_params 

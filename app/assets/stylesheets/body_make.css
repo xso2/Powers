@@ -1,0 +1,6 @@
+.body-make-img {
+  width: 400px;
+  border-radius: 8px;
+  height: 290px;
+  object-fit: cover;
+}

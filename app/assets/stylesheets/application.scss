@@ -21,6 +21,7 @@
   @import "header.css";
   @import "form.css";
   @import "post.css";
+  @import "body_make.css";
 
 
 .contents { padding-top: 60px; }
@@ -34,4 +35,16 @@
 .col-2 {
   display: flex;
   align-items: flex-start
+}
+
+.follow-btn {
+  width: 100px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.follow-btn a:hover{
+  background-color: #f5c500;
+  font-weight: bold;
+
 }
