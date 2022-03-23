@@ -15,6 +15,7 @@ class BodyMakesController < ApplicationController
 
   def create
     @body_make = BodyMake.new(body_make_params)
+    @body_make.start_time = Date.current
     if @body_make.save
       redirect_to body_makes_path
     else

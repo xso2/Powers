@@ -1,9 +1,9 @@
 class MealTime < ActiveHash::Base
   self.data = [
     { id: 1, name: '--' },
-    { id: 2, name: '朝' },
-    { id: 3, name: '昼' },
-    { id: 4, name: '夜' },
+    { id: 2, name: '朝食' },
+    { id: 3, name: '昼食' },
+    { id: 4, name: '夜ご飯' },
     { id: 5, name: '間食' },
   ]
   include ActiveHash::Associations
