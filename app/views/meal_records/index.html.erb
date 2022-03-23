@@ -4,21 +4,21 @@
     <ul class="post card-list">
       <% @meal_records.each do |meal_record| %>
       <li>
-        <%= link_to meal_record_path(meal_record.id) do %>
+        <%# <%= link_to meal_record_path(meal_record.id) do %> 
           <div class='meal_record-img-content'>
-            <p><%= meal_record.text %></p>
+            <h2 class="meal-text"><%= meal_record.text %></h2>
             <%= meal_record.updated_at.strftime("%Y年%m月%d日")%>の
             <%= meal_record.meal_time.name %>
             <p><%= meal_record.calorie %> kcal</p>
               <% if meal_record.image.present? %>
               <%= image_tag meal_record.image.variant(resize:'300x200'), class: "meal_record-img" %>
               <% else %>
-              <%= image_tag "4308463560_d0b0308c8d.jpeg", class:"meal-record-img" %>
+              <%= image_tag "test_image.png", class:"meal-record-img" %>
               <% end %>
           </div>
           <%# <h2><%= meal_record.user.name %></h2> 
 
-        <% end %><!-- link_to meal_record_path -->
+        <%# <% end %><!-- link_to meal_record_path --> 
       </li>
       <% end %>
     </ul>

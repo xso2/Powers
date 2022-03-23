@@ -3,8 +3,8 @@ class MealTime < ActiveHash::Base
     { id: 1, name: '--' },
     { id: 2, name: '朝食' },
     { id: 3, name: '昼食' },
-    { id: 4, name: '夜ご飯' },
-    { id: 5, name: '間食' },
+    { id: 4, name: '夕食' },
+    { id: 5, name: '間食' }
   ]
   include ActiveHash::Associations
   has_many :meal_records

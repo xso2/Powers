@@ -1,5 +1,7 @@
 class HomesController < ApplicationController
   def index
-    #それぞれのメソッドを定義
+    @tweet = Tweet.new
+    @body_make = BodyMake.new
+    @meal_record = MealRecord.new
   end
 end
