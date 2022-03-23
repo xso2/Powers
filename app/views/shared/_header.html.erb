@@ -8,6 +8,10 @@
     <nav class="header-nav">
       <ul class="header-nav-list"> 
         <% if user_signed_in? %>
+          <div class="form2">
+            <input type="search" class="form2-input" placeholder="ユーザーを探す" />
+            <button class="form2-button"><i class="fa fa-search"></i></button>
+          </div>
           <li class="header-nav-item"><%= link_to "ツイート", tweets_path%></li> 
           <li class="header-nav-item"><%= link_to "ボディメイク",  body_makes_path %></li>
           <li class="header-nav-item"><%= link_to "食事記録", meal_records_path%></li>  
