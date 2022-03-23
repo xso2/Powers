@@ -1,12 +1,16 @@
 Rails.application.routes.draw do
-  get 'relationships/followings'
-  get 'relationships/followers'
+
   resources :lists
   get 'lists/index'
   devise_for :users
   root to: 'homes#index'
 
-  resources :users, only: :show
+  resources :users, only:[:index, :show] do
+    resource :relationships, only: [:create, :destroy]
+    get 'followings' => 'relationships#followings', as: 'followings'
+    get 'followers' => 'relationships#followers', as: 'followers'
+  end
+
   resources :tweets, only: [:index, :new, :create, :show, :destroy] do
     resources :comments, only: [:create, :destroy]
   end

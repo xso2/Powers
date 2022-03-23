@@ -32,4 +32,12 @@ class User < ApplicationRecord
     followings.include?(user)
   end
   
+  # ユーザー検索
+  def self.search(search)
+    User.where('user_name LIKE(?)', "%#{search}%") if search != ''
+  end
+
+  # ユーザー検索範囲から対象ユーザーを除く
+  scope :others, ->(user) { where.not(id: user.id) }
+    
 end

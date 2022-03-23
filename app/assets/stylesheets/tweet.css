@@ -1,8 +1,11 @@
-.post ul {
-  display: flex;
+.tweet-img {
+  width: 400px;
+  border-radius: 8px;
+  height: 250px;
+  object-fit: cover;
 }
 
-.post li {
+.tweet__wrapper {
   display: block;
   flex-direction: column;
   border-radius: 10px;
@@ -14,10 +17,4 @@
   box-shadow: 10px 10px 10px #2a2b2f;
   background-color: #fff;
   text-align: center;
-}
-
-.post li a {
-  text-align: center;
-  color: #2b2f2a;
-  text-decoration: none;
 }
