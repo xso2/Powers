@@ -10,9 +10,9 @@ Rails.application.routes.draw do
     get 'followings' => 'relationships#followings', as: 'followings'
     get 'followers' => 'relationships#followers', as: 'followers'
   end
-  collection do
-    get 'search'
-  end
+  # collection do
+  #   get 'search'
+  # end
 
 
   resources :tweets, only: [:index, :new, :create, :show, :destroy] do

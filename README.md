@@ -1,24 +1,51 @@
-# README
+# アプリケーション名
+Powers
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+毎日の体重の管理や食事内容の記録
 
-Things you may want to cover:
+そしてツイート機能やフォロー機能などで
 
-* Ruby version
+同じ志を持った人たちとの交流や意見交換が出来ます。
 
-* System dependencies
+# URL
+http://35.76.86.211/
 
-* Configuration
+# テスト用アカウント
+basic認証ID:admin
 
-* Database creation
+basic認証パスワード:2222
 
-* Database initialization
+メールアドレス: test@test.com
 
-* How to run the test suite
+パスワード: 222222
 
-* Services (job queues, cache servers, search engines, etc.)
+# 利用方法
+トップページよりユーザー登録をする
 
-* Deployment instructions
+ツイートや食事記録、体の記録を投稿できる
 
-* ...
+マイページからその日投稿した内容をカレンダーから確認出来る
+
+# アプリケーションを作成した背景
+僕自身がコンテストに出るために減量をしていた時に
+アプリでの管理が必至だったのですが欲しい機能がひとまとめになっているアプリがなかったので作ろうと思いました。
+ツイート機能に関しては同じ志を持った人と情報の共有や困ったことを相談できる場所が必要と感じていました。
+体重管理や体の写真を投稿して後から見返すことも必要で日々の食事内容の記録も行わなければ減量が進まないのでそれらを踏まえての機能を搭載しました。
+
+# 洗い出した要件
+https://docs.google.com/spreadsheets/d/1kSLwH_n8XmVc293gYGt2uAQLAb_Dpf2GbxNyxlv_cv4/edit#gid=982722306
+
+# 実装した機能についての画像やGIFおよびその説明
+
+# 実装予定の機能
+
+# データベース設計
+
+# 画面遷移図
+
+# 開発環境
+
+# ローカルでの動作方法
+
+# 工夫したポイント
