@@ -20,3 +20,17 @@
   color: #2b2f2a;
   text-decoration: none;
 }
+
+.body-make-img {
+  width: 400px;
+  border-radius: 8px;
+  height: 290px;
+  object-fit: cover;
+}
+
+.meal-record-img {
+  width: 400px;
+  border-radius: 8px;
+  height: 290px;
+  object-fit: cover;
+}
