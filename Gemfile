@@ -75,3 +75,6 @@ gem 'pry-rails'
 gem 'simple_calendar', '~> 2.0'
 
 gem 'active_hash'
+
+gem 'chartkick'
+gem "groupdate"

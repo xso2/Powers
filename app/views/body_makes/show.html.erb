@@ -15,19 +15,19 @@
             </div>
         </li>
         <% if @meal_record.exists? %>
-        <li>
+        <%# <li>
             <div class='meal_record-img-content'>
               <h2 class="meal-text"><%= @meal_record.text %></h2>
-              <%= @meal_record.updated_at.strftime("%Y年%m月%d日")%>の
-              <%= @meal_record.meal_time.name %>
-              <p><%= @meal_record.calorie %> kcal</p>
-                <% if @meal_record.image.present? %>
-                <%= image_tag @meal_record.image.variant(resize:'300x200'), class: "meal_record-img" %>
-                <% else %>
-                <%= image_tag "test_image.png", class:"meal-record-img" %>
-            </div>
-          <% end %>
-      </li>
+              <%# <%= @meal_record.updated_at.strftime("%Y年%m月%d日")%>
+              <%# <%= @meal_record.meal_time.name %> 
+              <%# <p><%= @meal_record.calorie kcal</p> %>
+                <%# <% if @meal_record.image.present? %>  
+                <%# <%= image_tag @meal_record.image.variant(resize:'300x200'), class: "meal_record-img" %>
+                <%# <% else %> 
+                <%# <%= image_tag "test_image.png", class:"meal-record-img" %> 
+            <%# </div> %>
+          <%# <% end %> 
+      <%# </li>  %>
       <% end %>
     </ul>
   </div>
