@@ -19,9 +19,11 @@
 }
 
 .logo a {
+  display: flex;
   text-decoration: none;
   color: #2a2b2f;
   justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -146,4 +148,15 @@ text-decoration: none;
   background: inherit;
   border: 0;
   opacity: 0.54;
+}
+
+.header-nav-item1 {
+  float: left;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(119, 121, 121);
+  text-align: center;
+  list-style: none;
+  transition: 1s;
 }

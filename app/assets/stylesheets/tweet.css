@@ -1,7 +1,7 @@
 .tweet-img {
   width: 400px;
   border-radius: 8px;
-  height: 250px;
+  height: 290px;
   object-fit: cover;
 }
 
@@ -17,4 +17,13 @@
   box-shadow: 10px 10px 10px #2a2b2f;
   background-color: #fff;
   text-align: center;
+}
+
+.tweet__wrapper a {
+  background-color: #fff;
+color: #2a2b2f;
+}
+
+.comments_list {
+  list-style: none;
 }

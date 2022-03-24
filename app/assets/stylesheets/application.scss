@@ -35,6 +35,7 @@
 .col-2 {
   display: flex;
   align-items: flex-start
+  
 }
 
 .follow-btn {
@@ -47,4 +48,10 @@
   background-color: #f5c500;
   font-weight: bold;
 
+}
+
+.session-form:hover {
+  background-color: #fff;
+  color: #2a2b2f;
+  font-weight: bold;
 }

@@ -24,8 +24,6 @@ class BodyMakesController < ApplicationController
   end
 
   def show
-    @body_make = BodyMake.find(params[:id])
-
   end
 
   def destroy

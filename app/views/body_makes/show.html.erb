@@ -1,2 +1,2 @@
-<h1>BodyMakes#show</h1>
-<p>Find me in app/views/body_makes/show.html.erb</p>
+<% if  BodyMake.where('start_time >= ?', Time.now.beginning_of_day) %>
+<% end %>

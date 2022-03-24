@@ -1,5 +1,7 @@
-<ul class="form-top">
-  <li><%= render partial: "tweets/form", locals: { tweet: @tweet } %></li>
-  <li><%= render partial: "body_makes/form", locals: { body_make: @body_make } %></li>
-  <li><%= render partial: "meal_records/form", locals: { meal_record: @meal_record } %></li>
-</ul>
+<% if user_signed_in? %>
+  <ul class="form-top">
+    <li><%= render partial: "tweets/form", locals: { tweet: @tweet } %></li>
+    <li><%= render partial: "body_makes/form", locals: { body_make: @body_make } %></li>
+    <li><%= render partial: "meal_records/form", locals: { meal_record: @meal_record } %></li>
+  </ul>
+<% end %>
