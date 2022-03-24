@@ -1,2 +1,34 @@
-<% if  BodyMake.where('start_time >= ?', Time.now.beginning_of_day) %>
-<% end %>
+<div class="contents">
+  <div class="col-2">
+    <%= render partial: "form", locals: { body_make: @body_make }, class:"bodymake-form" %> 
+    <ul class="post card-list">
+        <li>
+            <div class='body_make-img-content'>
+              <h3><%= @body_make.weight %>kg</h3>
+              <%= @body_make.updated_at.strftime("%Y年%m月%d日")%>
+              <p><%= @body_make.text %></p>
+                <% if @body_make.image.present? %>
+                <%= image_tag @body_make.image, class: "body-make-img" %>
+                <% else %>
+                <%= image_tag 'DSC_1924-1024x683.jpeg', class: "body-make-img"%>
+              <% end %><!-- link_to body_make_path -->
+            </div>
+        </li>
+        <% if @meal_record.exists? %>
+        <li>
+            <div class='meal_record-img-content'>
+              <h2 class="meal-text"><%= @meal_record.text %></h2>
+              <%= @meal_record.updated_at.strftime("%Y年%m月%d日")%>の
+              <%= @meal_record.meal_time.name %>
+              <p><%= @meal_record.calorie %> kcal</p>
+                <% if @meal_record.image.present? %>
+                <%= image_tag @meal_record.image.variant(resize:'300x200'), class: "meal_record-img" %>
+                <% else %>
+                <%= image_tag "test_image.png", class:"meal-record-img" %>
+            </div>
+          <% end %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

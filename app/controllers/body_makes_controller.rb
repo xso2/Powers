@@ -24,6 +24,14 @@ class BodyMakesController < ApplicationController
   end
 
   def show
+    @body_make = BodyMake.find(params[:id])
+    @meal_record =  MealRecord.where('start_time >= ?', Time.now.beginning_of_day)
+  end
+
+  def edit
+  end
+
+  def update
   end
 
   def destroy

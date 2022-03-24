@@ -6,16 +6,16 @@
         <% @body_makes.each do |body_make| %>
         <li>
             <div class='body_make-img-content'>
+              <h2><%#= body_make.user.name %></h2>
+              <h3><%= body_make.weight %>kg</h3>
+              <%= body_make.updated_at.strftime("%Y年%m月%d日")%>
+              <p><%= body_make.text %></p>
+                <% if body_make.image.present? %>
+                <%= image_tag body_make.image, class: "body-make-img" %>
+                <% else %>
+                <%= image_tag 'DSC_1924-1024x683.jpeg', class: "body-make-img"%>
+              <% end %><!-- link_to body_make_path -->
             </div>
-            <h2><%#= body_make.user.name %></h2>
-            <h3><%= body_make.weight %>kg</h3>
-            <%= body_make.updated_at.strftime("%Y年%m月%d日")%>
-            <p><%= body_make.text %></p>
-              <% if body_make.image.present? %>
-              <%= image_tag body_make.image, class: "body-make-img" %>
-              <% else %>
-              <%= image_tag 'DSC_1924-1024x683.jpeg', class: "body-make-img"%>
-          <% end %><!-- link_to body_make_path -->
         </li>
         <%# <% end %> 
       <% end %>
