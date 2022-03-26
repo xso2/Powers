@@ -68,8 +68,19 @@ https://gyazo.com/795826492dcebf5a8f97c647fabf225c
 # 画面遷移図
 ![画面遷移図](powers_image.svg)
 # 開発環境
+バックエンド：Ruby 2.6.0 / Ruby on Rails 6.0.0
 
-# ローカルでの動作方法
+フロントエンド：HTML.CSS
+
+テキストエディタ：VScode
+
+タスク管理：GitHub
+# ローカルでの動以下のコマンドを順に実行。
+
+% git clone https://github.com/xso2/Powers.git
+% cd XXXXXX
+% bundle install
+% yarn install
 
 # 工夫したポイント
 大事にしている事が操作の簡素さです。
