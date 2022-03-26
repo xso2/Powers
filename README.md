@@ -66,7 +66,7 @@ https://gyazo.com/795826492dcebf5a8f97c647fabf225c
 # データベース設計
 ![ER図](powers.svg)
 # 画面遷移図
-
+![画面遷移図](powers_image.svg)
 # 開発環境
 
 # ローカルでの動作方法
