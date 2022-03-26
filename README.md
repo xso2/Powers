@@ -66,7 +66,7 @@ https://gyazo.com/795826492dcebf5a8f97c647fabf225c
 ・マイページにおいてカレンダーに加え折れ線グラフを用いることで可視化しやすくします
 
 # データベース設計
-!["ER図"](/Users/satoki/projects/Powers/powers.drawio.svg)
+![ER図](powers.drawio.svg)
 # 画面遷移図
 
 # 開発環境
