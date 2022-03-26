@@ -1,3 +1,4 @@
+<div class="bg-img">
 <% if user_signed_in? %>
   <ul class="form-top">
     <li><%= render partial: "tweets/form", locals: { tweet: @tweet } %></li>
@@ -5,3 +6,4 @@
     <li><%= render partial: "meal_records/form", locals: { meal_record: @meal_record } %></li>
   </ul>
 <% end %>
+</div>

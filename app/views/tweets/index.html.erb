@@ -16,7 +16,7 @@
           <p><%= tweet.text %></p>
           <div class='tweet-img-content'>
             <% if tweet.image.present? %>
-            <%= image_tag tweet.image.variant(resize:'300x200'), class: "tweet-img" %>
+            <%= image_tag tweet.image, class: "tweet-img" %>
             <% end %>
           </div>
         <% end %><!-- link_to tweet_path -->

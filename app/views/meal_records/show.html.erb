@@ -1,2 +1,20 @@
-<h1>MealRecords#show</h1>
-<p>Find me in app/views/meal_records/show.html.erb</p>
+<div class="contents">
+  <div class="col-2">
+    <%= render partial: "form", locals: { meal_record: @meal_record }, class:"bodymake-form" %> 
+    <ul class="post card-list">
+        <li>
+            <div class='meal_record-img-content'>
+              <h3><%= @meal_record.text%></h3>
+              <%= @meal_record.updated_at.strftime("%Y年%m月%d日")%>
+              <p><%= @meal_record.text %></p>
+              <p><%= @meal_record.calorie %> kcal</p>
+                <% if @meal_record.image.present? %>
+                <%= image_tag @meal_record.image, class: "body-make-img" %>
+                <% else %>
+                <%= image_tag 'test_image.png', class: "body-make-img"%>
+              <% end %><!-- link_to meal_record_path -->
+            </div>
+        </li>
+    </ul>
+  </div>
+</div>

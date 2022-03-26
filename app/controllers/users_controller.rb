@@ -17,6 +17,7 @@ class UsersController < ApplicationController
 
   def show
     @body_makes = current_user.body_makes
+    @meal_records = current_user.meal_records
     #@body_makes = BodyMakes.where(user_id: [User.follows.ids])
   end
 
