@@ -38,7 +38,7 @@ https://docs.google.com/spreadsheets/d/1kSLwH_n8XmVc293gYGt2uAQLAb_Dpf2GbxNyxlv_
 
 # DEMO
 トップ画面にて簡単に記録を出来るようにしました。
-![トップ画面](bbb26055b30fe1134122bae48dc5be26.png)
+![トップ画面](/Users/satoki/projects/Powers/app/assets/images/bbb26055b30fe1134122bae48dc5be26.png)
 ・SNS機能をつけることによってダイエットが上手く時に色んな人の知識共有を得て現状を打破する手助け
 ※自分自身減量中に停滞して色んなことを試しても上手くいかない時にそういった情報で打破出来たので身をもって感じました
 ![ツイート機能](bb3c89d13e543cc337206588c1facae2.png)
