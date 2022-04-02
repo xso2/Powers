@@ -42,3 +42,23 @@
   text-decoration: none;
   color: #2a2b2f;
 }
+
+.calendar-heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.calendar-heading a {
+  font-size: 30px;
+}
+
+.calendar-heading a:hover {
+  background-color: #bfbfbe;
+  color: #2a2b2f;
+}
+
+.calendar-title {
+  font-size: 50px;
+}
