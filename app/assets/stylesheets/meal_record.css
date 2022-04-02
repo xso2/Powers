@@ -1,0 +1,10 @@
+.nutrient_component {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.form-text-int {
+  width: 70px;
+}

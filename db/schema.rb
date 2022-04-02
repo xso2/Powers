@@ -60,6 +60,9 @@ ActiveRecord::Schema.define(version: 2022_03_22_060354) do
   create_table "meal_records", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "text"
     t.integer "calorie"
+    t.integer "protein"
+    t.integer "fat"
+    t.integer "carb"
     t.integer "meal_time_id"
     t.bigint "user_id", null: false
     t.datetime "start_time"

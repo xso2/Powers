@@ -11,6 +11,17 @@
               <%= meal_record.updated_at.strftime("%Y年%m月%d日")%>の
               <%= meal_record.meal_time.name %>
               <p><%= meal_record.calorie %> kcal</p>
+              <div class = "">
+                <% if meal_record.protein.present? %>
+                  <p>タンパク質<%= meal_record.protein %>g</p>
+                <% end%>
+                <% if meal_record.fat.present? %>
+                  <p>脂質<%= meal_record.fat %>g</p>
+                <% end %>
+                <% if meal_record.carb.present? %>
+                  <p>炭水化物<%= meal_record.carb %>g</p>
+                  <% end %>
+              </div>
                 <% if meal_record.image.present? %>
                 <%= image_tag meal_record.image.variant(resize:'300x200'), class: "meal_record-img" %>
                 <% else %>

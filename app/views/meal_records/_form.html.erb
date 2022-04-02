@@ -6,17 +6,34 @@
     <%= f.text_area :text, class:"form-text" %>
   </div>
 
-    <div class="field">
+  <div class="field">
     <%= f.collection_select(:meal_time_id, MealTime.all, :id, :name, {}, {class:"meal-time-select"}) %>
   </div>
 
 
-    <div class="field">
+  <div class="field">
     <%= f.label :calorie, "カロリー" %><br />
-    <%= f.text_field :calorie, class:"form-text" %></br>
+    <%= f.text_field :calorie, class:"form-text-int" %>kcal</br>
     <%= link_to '参考サイト', 'https://calorie.slism.jp/' %>
   </div>
 
+
+  <div class="field">
+    <ul class="nutrient_component">
+      <li>
+        <%= f.label :protein, "タンパク質" %><br />
+        <%= f.text_field :protein, class:"form-text-int" %>g
+      </li>
+      <li>
+        <%= f.label :fat, "脂質" %><br />
+        <%= f.text_field :fat, class:"form-text-int" %>g
+      </li>
+      <li>
+        <%= f.label :carb, "炭水化物" %><br />
+        <%= f.text_field :carb, class:"form-text-int" %>g
+      </li>
+    </ul>
+  </div>
   <div class="field">
     <%= f.label :image, "画像" %><br />
     <%= f.file_field :image, class:"form_image" %>
